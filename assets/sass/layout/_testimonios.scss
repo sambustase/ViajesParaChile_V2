@@ -1,0 +1,32 @@
+.comments{
+    margin: 50px 100px;
+    &__text{
+        text-align: center;
+        color: $color-text;
+   }
+    .boxComments{
+        display: flex;
+        .commentCustomer{
+           &__text{
+                color: $color-text;
+                padding: 0 50px;
+                margin-bottom: 30px;
+                text-align: justify;
+            }
+            &__imagen{
+                height: 40px;
+                width: 40px;
+                border-radius: 60px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                               
+                }
+            &__name{
+            color: $color-text;
+            text-align: center;
+            margin-top: 10px;
+            }
+        }
+    }
+}

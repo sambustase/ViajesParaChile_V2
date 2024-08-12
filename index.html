@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/viajes.svg">
+    <script src="https://kit.fontawesome.com/c0b0b8100b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Viajes para Chile</title>
 </head>
 <body>
     
+    <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-dark"> 
+        <div class="container">
+            <a class="navbar-brand text-light" href="#inicio"><img src="./assets/img/viajes.svg" alt="logo" width="20px" height="20px">Viajes Chile</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light textSimple" href="#inicio">Inicio</a></li>
+                        <a class="nav-link text-light textSimple" href="#quienesSomos">Quienes Somos</a></li>
+                        <a class="nav-link text-light textSimple" href="#destacado">Destacado</a></li>
+                        <a class="nav-link text-light textSimple" href="#contacto">Contacto</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    
+    
+    <main>
+        <section id="inicio" class="container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active boxCarousel" data-bs-interval="2000">
+                        <img src="./assets/img/carousel1.jpg" class="d-block w-100 boxCarousel__imagen" alt="lago">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="stones">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="pinguino">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="quienesSomos" class="container">
+            <h2 class="text-center text-light my-5">¿Quienes Somos?</h2>
+            <hr class="mb-5" id="line">
+            <div class="row">
+                <div class="col-12 col-md-6 d-none d-none d-sm-block aboutUs">
+                    <img src="./assets/img/quienes-somos.jpg" class="aboutUs__imagen" width="550px" height="400px" alt="quienesSomos">
+                </div>
+                <div class="col-12 col-md-6 text-light aboutUsBoxText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum placeat voluptate sed dolore animi voluptatum natus explicabo repellat, rem quaerat in vero ad, repudiandae non repellendus! Vel esse exercitationem eius!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis quidem illum culpa quasi, dignissimos, reiciendis et quos consequuntur deserunt nisi! Numquam consequatur quisquam rem, itaque libero exercitationem animi ducimus!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum placeat voluptate sed dolore animi voluptatum natus explicabo repellat, rem quaerat in vero ad, repudiandae non repellendus! Vel esse exercitationem eius!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis quidem illum culpa quasi, dignissimos, reiciendis et quos consequuntur deserunt nisi! Numquam consequatur quisquam rem, itaque libero exercitationem animi ducimus!</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="destacado" class="container">
+            <h2 class="text-center text-light my-5">Destacados</h2>
+            <hr class="mb-5" id="line">
+            <div class="row mx-1">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 destacado">
+                                <img src="./assets/img/card1.jpg" class="destacado__imagen w-100" alt="card">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Región de los Lagos</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequatur, ipsum ducimus ea non porro est aliquid sunt distinctio, sit eius similique, aut nihil sint exercitationem fugit! Numquam, ab pariatur!</p>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="travelBox">
+                                    <i class="fas fa-plane me-2"></i>
+                                    <p class="text-star me-5">Vuelos desde</p>
+                                </div>
+                                <div class="text-end ms-5">
+                                    <p class="text-end">$159.990</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 destacado">
+                                <img src="./assets/img/card2.jpg" class="destacado__imagen w-100" alt="card">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Desierto de Atacama</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequatur, ipsum ducimus ea non porro est aliquid sunt distinctio, sit eius similique, aut nihil sint exercitationem fugit! Numquam, ab pariatur!</p>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="travelBox">
+                                    <i class="fas fa-plane me-2"></i>
+                                    <p class="text-star me-5">Vuelos desde</p>
+                                </div>
+                                <div class="text-end ms-5">
+                                    <p class="text-end">$189.990</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 destacado">
+                                <img src="./assets/img/card3.jpg" class="destacado__imagen w-100" alt="card">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Norte Grande de Chile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequatur, ipsum ducimus ea non porro est aliquid sunt distinctio, sit eius similique, aut nihil sint exercitationem fugit! Numquam, ab pariatur!</p>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="travelBox">
+                                    <i class="fas fa-plane me-2"></i>
+                                    <p class="text-star me-5">Vuelos desde</p>
+                                </div>
+                                <div class="text-end ms-5">
+                                    <p class="text-end">$289.990</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="col-12 col-md-6 mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 destacado">
+                                <img src="./assets/img/card4.jpg" class="destacado__imagen w-100" alt="card">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Bosque Mágico</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequatur, ipsum ducimus ea non porro est aliquid sunt distinctio, sit eius similique, aut nihil sint exercitationem fugit! Numquam, ab pariatur!</p>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="travelBox">
+                                    <i class="fas fa-plane me-2"></i>
+                                    <p class="text-star me-5">Vuelos desde</p>
+                                </div>
+                                <div class="text-end ms-5">
+                                    <p class="text-end">$259.990</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments">
+        <h2 class="comments__text">Testimonios</h2>
+        <hr id="line">
+        <div class="boxComments">
+            <div class="commentCustomer" >
+                <p class="commentCustomer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse facilis animi harum aperiam adipisci ea consequuntur accusamus, saepe voluptate atque, enim quod vel debitis sed nam quibusdam odit fugit!</p>
+                <img src="./assets/img/testimonio1.jpg"  class="commentCustomer__imagen" alt="testimonio">
+                <p class="commentCustomer__name">Marcela</p>
+            </div>
+            <div class="commentCustomer">
+                <p class="commentCustomer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse facilis animi harum aperiam adipisci ea consequuntur accusamus, saepe voluptate atque, enim quod vel debitis sed nam quibusdam odit fugit!</p>
+                <img src="./assets/img/testimonio2.jpg" class="commentCustomer__imagen" alt="testimonio">
+                <p class="commentCustomer__name" >Christian</p>
+            </div class="commentCustomer__name">
+            <div class="commentCustomer">
+                <p class="commentCustomer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse facilis animi harum aperiam adipisci ea consequuntur accusamus, saepe voluptate atque, enim quod vel debitis sed nam quibusdam odit fugit!</p>
+                <img src="./assets/img/testimonio3.jpg" class="commentCustomer__imagen" alt="testimonio">
+                <p class="commentCustomer__name">Fernanda</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
