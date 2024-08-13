@@ -1,31 +1,41 @@
-.comments{
+.comments {
     margin: 50px 100px;
-    &__text{
+
+    &__text {
         text-align: center;
         color: $color-text;
-   }
-    .boxComments{
+    }
+
+    .boxComments {
         display: flex;
-        .commentCustomer{
-           &__text{
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+
+        .commentCustomer {
+            flex: 1 1 300px; 
+            margin: 10px; 
+            max-width: 300px; 
+            box-sizing: border-box; 
+
+            &__text {
                 color: $color-text;
-                padding: 0 50px;
-                margin-bottom: 30px;
+                padding: 0 20px;
+                margin-bottom: 20px;
                 text-align: justify;
             }
-            &__imagen{
-                height: 40px;
-                width: 40px;
-                border-radius: 60px;
+
+            &__imagen {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
                 display: block;
-                margin-left: auto;
-                margin-right: auto;
-                               
-                }
-            &__name{
-            color: $color-text;
-            text-align: center;
-            margin-top: 10px;
+                margin: 0 auto;
+            }
+
+            &__name {
+                color: $color-text;
+                text-align: center;
+                margin-top: 10px;
             }
         }
     }
