@@ -1,0 +1,10 @@
+.aboutUs{
+    &__imagen{
+        border-radius: 10px;
+    } 
+}
+.aboutUsBoxText{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -1,1 +1,26 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+//abstracts/
+//vendors/
+//base/
+//layout/
+//components/
+//pages/
+//themes/
+
+
+@import './abstracts/variables';
+@import './layout/destacado';
+@import './layout/navbar';
+@import './layout/quienesSomos';
+@import './layout/testimonios';
+
+body{
+    background-color: $color-body;
+}
+
+#line{
+    color: $color-text;
+    margin-bottom: 30px;
+}
