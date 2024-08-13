@@ -1,0 +1,10 @@
+.destacado{
+    &__imagen{
+        width: 180px;
+        height: 260px;
+    }
+}
+.travelBox{
+    display: flex;
+    align-items: first baseline;
+}
